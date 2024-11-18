@@ -1,20 +1,948 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Как помочь ребенку</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header class="header"><div class="container"></div></header>
+    <header class="header">
+      <div class="container">
+        <p class="desc-intensive">
+          Углубленный интенсив по детской нумерологии для заботливых родителей
+        </p>
+        <div
+          class="title-container"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <h1 class="title">Как помочь ребенку</h1>
+          <p class="subtitle">вырасти успешным и реализованным в этом</p>
+          <p class="subtitle">сложном мире, зная секреты даты его рождения?</p>
+        </div>
+        <picture
+          ><source
+            srcset="
+              ./src/img/header/author-1x.png 1x,
+              ./src/img/header/author-2x.png 2x
+            "
+            width="320"
+            height="auto" />
+          <img
+            class="header-author-image"
+            src="./src/img/header/author-1x.png"
+            alt="author image"
+            width="320"
+            height="auto"
+        /></picture>
+        <ul class="list">
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/check-mark-1x.png 1x,
+                  ./src/img/header/check-mark-2x.png 2x
+                "
+                width="12"
+                height="12" />
+              <img
+                class="item-decor-image"
+                src="./src/img/header/check-mark-1x.png"
+                alt="item decoration image"
+                width="12"
+                height="12"
+            /></picture>
+            <p class="item-text">Никакой магии. Только цифры</p>
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/check-mark-1x.png 1x,
+                  ./src/img/header/check-mark-2x.png 2x
+                "
+                width="12"
+                height="12" />
+              <img
+                class="item-decor-image"
+                src="./src/img/header/check-mark-1x.png"
+                alt="item decoration image"
+                width="12"
+                height="12"
+            /></picture>
+            <p class="item-text">Четкий и понятный результат</p>
+          </li>
+          <li class="list-item">
+            <picture
+              ><source
+                srcset="
+                  ./src/img/header/check-mark-1x.png 1x,
+                  ./src/img/header/check-mark-2x.png 2x
+                "
+                width="12"
+                height="12" />
+              <img
+                class="item-decor-image"
+                src="./src/img/header/check-mark-1x.png"
+                alt="item decoration image"
+                width="12"
+                height="12"
+            /></picture>
+            <p class="item-text">Самый быстрый путь к реализации</p>
+          </li>
+        </ul>
+        <p class="desc">
+          Интенсив для родителей, которые хотят глубже
+          <span>понять своего ребенка,</span>
+          найти подход к нему и помочь вырасти успешным и счастливым человеком!
+        </p>
+        <a class="btn" href="#buy"
+          ><p class="btn-title">присоединиться</p>
+          <p class="btn-sale-text">со скидкой -90%</p></a
+        >
+      </div>
+    </header>
     <main>
-      <section></section>
+      <section class="bonuses">
+        <div class="container">
+          <h3 class="title">
+            Присоединившись прямо сегодня, вы получаете
+            <span>скидку 90% и три ценных бонуса:</span>
+          </h3>
+          <ul class="list">
+            <li
+              class="list-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="250"
+                  height="171" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus image"
+                  width="250"
+                  height="171"
+              /></picture>
+              <p class="item-text">
+                <span>Секции и кружки,</span> которые подходят вашему ребенку по
+                дате рождения
+              </p>
+            </li>
+            <li
+              class="list-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-02-1x.png 1x,
+                    ./src/img/bonuses/bonus-02-2x.png 2x
+                  "
+                  width="250"
+                  height="171" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-02-1x.png"
+                  alt="bonus image"
+                  width="250"
+                  height="171"
+              /></picture>
+              <p class="item-text">
+                <span>Расчет денежного кода</span> и финансовой реализации
+              </p>
+            </li>
+            <li
+              class="list-item"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <picture
+                ><source
+                  srcset="
+                    ./src/img/bonuses/bonus-01-1x.png 1x,
+                    ./src/img/bonuses/bonus-01-2x.png 2x
+                  "
+                  width="250"
+                  height="171" />
+                <img
+                  class="bonus-image"
+                  src="./src/img/bonuses/bonus-01-1x.png"
+                  alt="bonus image"
+                  width="250"
+                  height="171"
+              /></picture>
+              <p class="item-text">
+                <span
+                  >Как ребенку избежать трудностей в общении с мамой и
+                  папой,</span
+                >
+                если они являются кармическими родителями
+              </p>
+            </li>
+          </ul>
+          <a class="btn" href="#buy"
+            ><p class="btn-title">присоединиться</p>
+            <p class="btn-sale-text">со скидкой -90%</p></a
+          >
+        </div>
+      </section>
+      <div class="background-wrapper">
+        <section class="for-whom">
+          <div class="container">
+            <div
+              class="title-container"
+              data-aos="fade-right"
+              data-aos-duration="1000"
+            >
+              <h2 class="title">Этот интенсив для</h2>
+              <p class="subtitle">родителей, которые:</p>
+            </div>
+            <ul class="list">
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/image-01-1x.png 1x,
+                      ./src/img/for-whom/image-01-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/image-01-1x.png"
+                    alt="people image"
+                    width="110"
+                    height="100"
+                /></picture>
+                <div class="text-box">
+                  <p class="item-text">Не понимают своих детей</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/image-02-1x.png 1x,
+                      ./src/img/for-whom/image-02-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/image-02-1x.png"
+                    alt="people image"
+                    width="110"
+                    height="100"
+                /></picture>
+                <div class="text-box">
+                  <p class="item-text">Кричат, обижают, унижают своих детей</p>
+                </div>
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/image-03-1x.png 1x,
+                      ./src/img/for-whom/image-03-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/image-03-1x.png"
+                    alt="people image"
+                    width="110"
+                    height="100"
+                /></picture>
+                <div class="text-box">
+                  <p class="item-text">
+                    Не могут контролировать агрессию и бьют ребенка
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/image-04-1x.png 1x,
+                      ./src/img/for-whom/image-04-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/image-04-1x.png"
+                    alt="people image"
+                    width="110"
+                    height="100"
+                /></picture>
+                <div class="text-box">
+                  <p class="item-text">
+                    Не понимают куда направить ребенка, чтобы ему было хорошо
+                  </p>
+                </div>
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/for-whom/image-05-1x.png 1x,
+                      ./src/img/for-whom/image-05-2x.png 2x
+                    "
+                    width="110"
+                    height="100" />
+                  <img
+                    class="for-whom-image"
+                    src="./src/img/for-whom/image-05-1x.png"
+                    alt="people image"
+                    width="110"
+                    height="100"
+                /></picture>
+                <div class="text-box">
+                  <p class="item-text">
+                    Хотят наладить отношения с сыном или дочерью, которые
+                    отдалились от них
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="about-author">
+          <div class="container">
+            <h2 class="title" data-aos="fade-right" data-aos-duration="1000">
+              Познакомимся
+            </h2>
+            <picture
+              ><source
+                srcset="
+                  ./src/img/about-author/image-1x.png 1x,
+                  ./src/img/about-author/image-2x.png 2x
+                "
+                width="320"
+                height="auto" />
+              <img
+                class="about-author-image"
+                src="./src/img/about-author/image-1x.png"
+                alt="author image"
+                width="320"
+                height="auto"
+            /></picture>
+            <h3 class="name">Меня зовут Харченко Светлана</h3>
+            <ul class="list">
+              <li class="list-item">
+                Практикующий Нумеролог, Эксперт по <br />
+                детской Кармологии
+              </li>
+              <li class="list-item">10 лет практической работы</li>
+              <li class="list-item">Тысячи счастливых и реализованных семей</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <section class="about-intensive">
+        <div class="container">
+          <h2 class="title" data-aos="fade-right" data-aos-duration="1000">
+            Об интенсиве
+          </h2>
+          <p class="desc">
+            <span>Онлайн интенсив для родителей,</span> которые хотят помочь
+            детям реализоваться с помощью нумерологического анализа личности
+          </p>
+          <div class="main-wrapper">
+            <p class="main-text">5 основных видеоуроков</p>
+          </div>
+          <span class="plus">+</span>
+          <p class="additional">
+            файловый помощник к каждому уроку для Вашего удобства
+          </p>
+        </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <h2 class="title" data-aos="fade-right" data-aos-duration="1000">
+            Программа <span>интенсива</span>
+          </h2>
+          <ul class="list">
+            <li class="list-item">
+              <span class="item-number">01</span>
+              <div class="item-box">
+                <p class="lesson-number">[ урок 1 ]</p>
+                <p class="lesson-name">
+                  Основные числа в нумерологии. Как рассчитать число рождения,
+                  число талантов, число точки комфорта. Влияние месяца рождения
+                  ребенка на его Карму. С какими задачами ребенок пришел в этот
+                  Мир?
+                </p>
+                <p class="lesson-result">
+                  <span>Результат урока:</span> <br />
+                  Вы научитесь самостоятельно рассчитывать основные точки в дате
+                  рождения и понимать их значение
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">02</span>
+              <div class="item-box">
+                <p class="lesson-number">[ урок 2 ]</p>
+                <p class="lesson-name">
+                  Психологический портрет ребенка по его дате рождения
+                </p>
+                <p class="lesson-result">
+                  <span>Результат урока:</span> <br />
+                  Поймете эмоциональное состояние и психологические потребности
+                  ребенка. Узнаете почему ребенок порой не слушается,
+                  перестанете ругаться на него, найдете важный индивидуальный
+                  подход
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">03</span>
+              <div class="item-box">
+                <p class="lesson-number">[ урок 3 ]</p>
+                <p class="lesson-name">
+                  Таланты и способности ребенка через призму чисел
+                </p>
+                <p class="lesson-result">
+                  <span>Результат урока:</span> <br />
+                  Быстрее сможете замечать возможные трудности в обучении,
+                  подберете подходящие образовательные программы и методы
+                  обучения, что повысит эффективность обучения в десятки раз
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">04</span>
+              <div class="item-box">
+                <p class="lesson-number">[ урок 4 ]</p>
+                <p class="lesson-name">
+                  Страхи и комплексы на подсознательном уровне ребенка
+                </p>
+                <p class="lesson-result">
+                  <span>Результат урока:</span> <br />
+                  Зная внутренний мир ребенка родители смогут оказывать
+                  необходимую поддержку в трудные минуты, помогая ему
+                  справляться с эмоциями
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <span class="item-number">05</span>
+              <div class="item-box">
+                <p class="lesson-number">[ урок 5 ]</p>
+                <p class="lesson-name">Планирование будущего. Профессии</p>
+                <p class="lesson-result" id="buy">
+                  <span>Результат урока:</span> <br />
+                  Зная таланты ребенка, Вы сможете заранее подумать о
+                  профессиональных направлениях и увлечениях, которые стоит
+                  развивать, чтобы помочь ребенку построить успешное будущее
+                </p>
+              </div>
+            </li>
+          </ul>
+          <div class="buy-container">
+            <div class="buy-box">
+              <div class="buy-star-sell">
+                <img
+                  class="buy-star-image"
+                  src="./src/img/buy-star.svg"
+                  alt="star"
+                  width="105"
+                  height="105"
+                />
+                <p class="sell-text">скидка <span>-90%</span></p>
+              </div>
+              <p class="buy-text">
+                Успейте купить со скидкой 90% и получить еще один секретный
+                бонус
+              </p>
+              <div class="price-container">
+                <div class="line-thought"></div>
+                <p class="price"><span>4200грн</span>&nbsp;420грн</p>
+              </div>
+              <a class="btn" href="" target="_blank" rel="nofollow"
+                >присоединиться</a
+              >
+            </div>
+            <div class="timer-container">
+              <p class="timer-text">до окончания акции</p>
+              <div id="countdown-two" class="countdown">
+                <div class="countdown-number">
+                  <span class="hours countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="minutes countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="seconds countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot">:</span></div>
+                <div class="countdown-number">
+                  <span class="milliseconds countdown-time"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="format">
+        <div class="container">
+          <h2 class="title" data-aos="fade-right" data-aos-duration="1000">
+            Формат обучения
+          </h2>
+          <div class="list-container">
+            <ul class="list">
+              <li class="list-item">
+                <span>Обучение проходит на образовательной платформе,</span>
+                доступ на которую вы получите через почтовый адрес сразу после
+                оплаты
+              </li>
+              <li class="list-item">
+                <span>На платформе вы сразу увидите все уроки</span> и бонусы и
+                сможете приступить к обучению
+              </li>
+              <li class="list-item">
+                <span>Короткие видеоуроки легко запоминаются</span> и дают
+                возможность пересматривать их для конспектирования
+              </li>
+              <li class="list-item">
+                <span>Полностью самостоятельное обучение</span> без домашних
+                заданий, которое вы можете проходить в удобное для вас время.
+                Курс сохраняется в течении 30 дней
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <div class="background-wrapper">
+        <section class="answers">
+          <div class="container">
+            <h2 class="title" data-aos="fade-right" data-aos-duration="1000">
+              Этот интенсив даст вам ответы <br />
+              <span>на следующие вопросы:</span>
+            </h2>
+            <ul class="list">
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/answers/image-01-1x.png 1x,
+                      ./src/img/answers/image-01-2x.png 2x
+                    "
+                    width="36"
+                    height="36" />
+                  <img
+                    class="answers-image"
+                    src="./src/img/answers/image-01-1x.png"
+                    alt="emoji image"
+                    width="36"
+                    height="36"
+                /></picture>
+                <span>Какие врожденные таланты</span> и способности есть у
+                вашего ребенка, и как развивать их наиболее эффективным
+                способом?
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/answers/image-02-1x.png 1x,
+                      ./src/img/answers/image-02-2x.png 2x
+                    "
+                    width="36"
+                    height="36" />
+                  <img
+                    class="answers-image"
+                    src="./src/img/answers/image-02-1x.png"
+                    alt="emoji image"
+                    width="36"
+                    height="36"
+                /></picture>
+                <span>Каковы особенности характера</span> вашего ребенка, и
+                каким способом найти с ним общий язык?
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/answers/image-03-1x.png 1x,
+                      ./src/img/answers/image-03-2x.png 2x
+                    "
+                    width="36"
+                    height="36" />
+                  <img
+                    class="answers-image"
+                    src="./src/img/answers/image-03-1x.png"
+                    alt="emoji image"
+                    width="36"
+                    height="36"
+                /></picture>
+                <span>Что необходимо для развития</span> вашего ребенка и
+                становления его счастливой личностью?
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/answers/image-04-1x.png 1x,
+                      ./src/img/answers/image-04-2x.png 2x
+                    "
+                    width="36"
+                    height="36" />
+                  <img
+                    class="answers-image"
+                    src="./src/img/answers/image-04-1x.png"
+                    alt="emoji image"
+                    width="36"
+                    height="36"
+                /></picture>
+                <span>В каких сферах ему стоит развиваться,</span> какие кружки
+                и секции будут ему полезны?
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/answers/image-05-1x.png 1x,
+                      ./src/img/answers/image-05-2x.png 2x
+                    "
+                    width="36"
+                    height="36" />
+                  <img
+                    class="answers-image"
+                    src="./src/img/answers/image-05-1x.png"
+                    alt="emoji image"
+                    width="36"
+                    height="36"
+                /></picture>
+                <span
+                  >В каких направлениях ваш ребенок сможет добиться
+                  успеха,</span
+                >
+                и как направить его усилия с раннего возраста?
+              </li>
+              <li class="list-item">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/img/answers/image-06-1x.png 1x,
+                      ./src/img/answers/image-06-2x.png 2x
+                    "
+                    width="36"
+                    height="36" />
+                  <img
+                    class="answers-image"
+                    src="./src/img/answers/image-06-1x.png"
+                    alt="emoji image"
+                    width="36"
+                    height="36"
+                /></picture>
+                <span>Почему вы иногда злитесь на своего ребенка</span> или
+                испытываете чувство вины, и как с этим справиться?
+              </li>
+            </ul>
+            <p class="desc">
+              <span
+                >Опыт данного интенсива показывает, что детям самим будет очень
+                интересно</span
+              >
+              знать значение их цифр и цифр их друзей, они лучше узнаёт сами
+              себя, с восторгом “просчитывают” одноклассников, и начинают видеть
+              мир по новому!
+            </p>
+            <a class="btn" href="#buy"
+              ><p class="btn-title">присоединиться</p>
+              <p class="btn-sale-text">со скидкой -90%</p></a
+            >
+          </div>
+        </section>
+        <section class="reviews section">
+          <div class="container">
+            <div class="reviews-container">
+              <h2
+                class="reviews-title"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              >
+                ОТЗЫВЫ
+              </h2>
+              <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-01-1x.png 1x,
+                          ./src/img/reviews/review-01-2x.png 2x
+                        "
+                        width="320"
+                        height="400" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-01-1x.png"
+                        alt="review"
+                        width="320"
+                        height="400"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-02-1x.png 1x,
+                          ./src/img/reviews/review-02-2x.png 2x
+                        "
+                        width="320"
+                        height="400" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-02-1x.png"
+                        alt="review"
+                        width="320"
+                        height="400"
+                    /></picture>
+                  </div>
+                  <div class="swiper-slide">
+                    <picture
+                      ><source
+                        srcset="
+                          ./src/img/reviews/review-03-1x.png 1x,
+                          ./src/img/reviews/review-03-2x.png 2x
+                        "
+                        width="320"
+                        height="400" />
+                      <img
+                        class="review-image"
+                        src="./src/img/reviews/review-03-1x.png"
+                        alt="review"
+                        width="320"
+                        height="400"
+                    /></picture>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <div class="hand-move-container">
+                <img
+                  src="./src/img/hand-move.svg"
+                  width="21"
+                  height="21"
+                  class="hand-move-icon"
+                  alt="hand-move"
+                />
+                <p class="hand-move-text">листай, чтоб увидеть больше</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="become">
+        <div class="container">
+          <div class="wrapper">
+            <p class="title-desc">
+              Успешность наших детей во многом зависит от их родителей
+            </p>
+            <p class="title">
+              Станьте теми родителями, кого в 30+ будут Благодарить! <br />
+              <span>Теми, кто не боится, что им “не принесут стакан воды”</span>
+            </p>
+            <ul class="list">
+              <li class="list-item">
+                Этот курс это начало! Начало Большого будущего Вашего ребенка!
+              </li>
+              <li class="list-item">
+                Присоединяйтесь к моему курсу и откройте мир возможностей для
+                вашего ребенка!
+              </li>
+              <li class="list-item">
+                Не упустите шанс стать лучшим родителем!
+              </li>
+            </ul>
+            <a class="btn" href="#buy"
+              ><p class="btn-title">присоединиться</p>
+              <p class="btn-sale-text">со скидкой -90%</p></a
+            >
+          </div>
+        </div>
+      </section>
+      <section class="questions section">
+        <div class="container">
+          <div
+            class="question-title-container"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h2 class="questions-title">ОТВЕТЫ</h2>
+            <p class="questions-subtitle">на ВОПРОСЫ:</p>
+          </div>
+          <div class="questions-container">
+            <ul class="questions-list list">
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Почему так дешево? В чем секрет?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Секрета нет! Мои консультации и обучение стоят других
+                      денег. Но сейчас очень трудные времена. А дети- это наше
+                      Будущее! И каким оно будет, зависит от нас-от родителей.
+                      <br />
+                      <br />Я тоже-мама, и мне хочется помочь всем родителям
+                      узнать глубже особенности своего ребенка. Чтобы именно
+                      родители, используя эти знания, помогли своему ребенку
+                      стать уверенным, успешным и счастливым человеком!
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Если я ничего не понимаю в Нумерологии, получится ли у меня?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Я даю материал понятно и легко. Даже обычный человек
+                      сможет очень просто просчитать все заложенные в цифры
+                      смыслы.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">
+                    Если у меня мало свободного времени, сколько времени займет
+                    курс?
+                  </p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Формат уроков в записи по 30-40 минут и вы можете их
+                      просматривать в удобное для вас время.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="questions-item">
+                <div class="questions-title-container">
+                  <p class="questions-item-title">Для чего мне эти знания?</p>
+                  <div class="questions-item-svg"></div>
+                </div>
+                <div class="questions-answer-container">
+                  <div class="questions-wrapper">
+                    <p class="questions-answer">
+                      Если бы я раньше знала эти знания о моем ребенке, я бы
+                      быстрее направила ее в сторону развития ее талантов,
+                      помогла быстрее стать ей успешной. Сэкономила не только
+                      свои деньги, нервы, но и смогла наладить дружеские
+                      отношения с ребенком.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="guarantee">
+        <div class="container">
+          <div class="wrapper">
+            <p class="title">100% гарантия возврата денег</p>
+            <p class="text">
+              Если вам что-то не понравится, я верну вам деньги без каких-либо
+              препятствий в течение 14 дней после оплаты
+            </p>
+          </div>
+          <p class="desc">Последний шанс присоединиться к курсу со скидкой!</p>
+          <a class="btn" href="#buy"
+            ><p class="btn-title">присоединиться</p>
+            <p class="btn-sale-text">со скидкой -90%</p></a
+          >
+        </div>
+      </section>
     </main>
-    <footer class="footer"><div class="container"></div></footer>
+    <footer class="footer section">
+      <div class="container">
+        <div class="fop-box">
+          <p class="name">ФОП Харченко Світлана</p>
+          <p class="code">іпн 2653901741</p>
+        </div>
+        <a class="mail-link" href="mailto:har72swet@gmail.com"
+          ><div class="mail-box">
+            <img src="./src/img/mail.svg" alt="mail" />
+            <p class="mail">пошта</p>
+          </div></a
+        >
+        <div class="deals-box">
+          <a
+            href="https://docs.google.com/document/d/1XebbvMorpBByHIegGAkz_mjg5Mvltip1lcgRpVlo2Ao/edit?usp=sharing"
+            target="_blank"
+            rel="nofollow"
+            class="deals-link public"
+            >публічна оферта</a
+          >
+          <a
+            href="https://docs.google.com/document/d/1og05CCsHbrpyRcG7DLLLNU4tSsxBuUF_F5sH4bfslcs/edit?usp=sharing"
+            target="_blank"
+            rel="nofollow"
+            class="deals-link confidence"
+            >політика конфідеційності</a
+          >
+        </div>
+        <a
+          class="dising-creator"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><img src="./src/img/insta.svg" alt="insta" height="25" width="25" />
+          <p>
+            розробка сайту <br />
+            <span>lisa bardadym</span>
+          </p></a
+        >
+      </div>
+    </footer>
+
+    <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/swiper.js" type="module"></script>
+    <script src="./src/js/questions.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]', {
+        speed: 500,
+        speedAsDuration: true,
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
